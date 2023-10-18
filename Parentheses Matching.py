@@ -35,7 +35,7 @@ def Bracket(open, close, string):
 
 	#if stack still has open brackets then need more closed brackets
 	print("Too many open brackets")
-	return open_stack.size() == 0
+	return open_stack.isEmpty()
 			
 
 
