@@ -39,7 +39,7 @@ def Bracket(open, close, string):
 			
 
 
-
-open_brackets = ["{", "[", "(", "<"]
-close_brackets = ["}", "]", ")", ">"]
-print(Bracket(open_brackets, close_brackets, "("))
+if __name__ == "__main__":
+	open_brackets = ["{", "[", "(", "<"]
+	close_brackets = ["}", "]", ")", ">"]
+	print(Bracket(open_brackets, close_brackets, "("))
