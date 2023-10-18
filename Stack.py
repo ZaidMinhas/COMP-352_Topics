@@ -16,7 +16,7 @@ class Stack:
 		return len(self.data)
 
 	def isEmpty(self):
-		return size() == 0
+		return self.size() == 0
 
 	def __str__(self):
 		return ", ".join([str(i) for i in self.data])
