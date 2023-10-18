@@ -23,18 +23,15 @@ def Bracket(open, close, string):
 		else:
 			#if stack is empty and there is a closed bracket, then there is no open bracket to close it
 			if (open_stack.size() == 0):
-				print("Too many closed brackets")
 				return False
 
 			#if difference of index is equal to n then correct pair
 			if (score - open_stack.top() == n):
 				open_stack.pop()
 			else:
-				print("incorrect pairing")
 				return False
 
 	#if stack still has open brackets then need more closed brackets
-	print("Too many open brackets")
 	return open_stack.isEmpty()
 			
 
