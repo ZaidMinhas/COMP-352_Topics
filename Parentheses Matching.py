@@ -39,4 +39,9 @@ def Bracket(open, close, string):
 if __name__ == "__main__":
 	open_brackets = ["{", "[", "(", "<"]
 	close_brackets = ["}", "]", ")", ">"]
+	
+	print(Bracket(open_brackets, close_brackets, "( )(( )){([( )])}"))
+	print(Bracket(open_brackets, close_brackets, "((( )(( )){([( )])}"))
+	print(Bracket(open_brackets, close_brackets, ")(( )){([( )])}"))
+	print(Bracket(open_brackets, close_brackets, "({[ ])}"))
 	print(Bracket(open_brackets, close_brackets, "("))
